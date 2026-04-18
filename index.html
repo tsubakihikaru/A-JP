@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A シャープ Studio | Professional Development Environment for Beginners</title>
+  <style>
+    /* Professional 2008 Palette: Slate, Silver, and Sky Blue */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", "Tahoma", "Arial", sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    /* Polished Silver Header */
+    .header {
+      background: linear-gradient(to bottom, #ffffff 0%, #e1e7ed 100%);
+      border-bottom: 1px solid #b6c2cf;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #2c3e50;
+      letter-spacing: -1px;
+    }
+
+    .logo span { color: #007acc; }
+
+    .nav a {
+      color: #555;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .nav a:hover { color: #007acc; }
+
+    /* Main Content Wrapper */
+    .wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: white;
+      border: 1px solid #d1d9e1;
+      padding: 40px;
+      border-radius: 4px;
+    }
+
+    h1 {
+      margin: 0 0 15px 0;
+      color: #2c3e50;
+      font-size: 32px;
+      font-weight: 300;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #7f8c8d;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    /* Professional "Glass" Download Button */
+    .download-box {
+      background: #fcfdfe;
+      border: 1px solid #e1e7ed;
+      padding: 30px;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background: linear-gradient(to bottom, #4cb1ff 0%, #007acc 100%);
+      color: white;
+      padding: 18px 45px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 3px;
+      border: 1px solid #005f99;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+
+    .btn-download:hover {
+      background: linear-gradient(to bottom, #5dc1ff 0%, #008ae6 100%);
+    }
+
+    /* Sidebar / Specs */
+    .sidebar-panel {
+      background: #fff;
+      border: 1px solid #d1d9e1;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .panel-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #2c3e50;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .spec-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .spec-list li {
+      padding: 6px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 12px;
+      color: #95a5a6;
+      border-top: 1px solid #e1e7ed;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">A# <span>STUDIO</span></div>
+      <nav class="nav">
+        <a href="https://github.com/tsubakihikaru/A-Sharp/new/main/products.html">Products</a>
+        <a href="#">Documentation</a>
+        <a href="#">Enterprise</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="main-col">
+      <section class="hero">
+        <h1>A# Studio Professional</h1>
+        <p class="tagline">The industry-standard development environment for A シャープ coding and HAL.gui integration.</p>
+        
+        <div class="download-box">
+          <a href="#" class="btn-download">Download v1.0.4 Runtime</a>
+          <p style="font-size: 12px; color: #7f8c8d; margin-top: 15px;">
+            Windows 64-bit Installer (12.4 MB) <br>
+            Released: NOT YET
+          </p>
+        </div>
+
+        <div style="margin-top: 40px;">
+          <h3 style="color: #2c3e50;">Technical Overview</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #555;">
+            A シャープ Studio provides a robust framework for building high-performance applications. Version 1.0.4 introduces enhanced memory management and full support for the HAL.gui library, allowing developers to deploy rich user interfaces with minimal overhead.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="side-col">
+      <div class="sidebar-panel">
+        <div class="panel-title">System Requirements</div>
+        <ul class="spec-list">
+          <li><strong>OS:</strong> Windows XP SP2 / Vista</li>
+          <li><strong>CPU:</strong> 1.8GHz Intel or AMD</li>
+          <li><strong>RAM:</strong> 1GB Recommended</li>
+          <li><strong>Disk:</strong> 200MB Free Space</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-panel">
+        <div class="panel-title">Latest Updates</div>
+        <p style="font-size: 12px; color: #666;">
+          <strong>Oct 10:</strong> Security Patch KB9021<br><br>
+          <strong>Sep 24:</strong> HAL.gui Documentation updated for v1.0
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; 2026 A シャープ Studio. All rights reserved. | <a href="#" style="color: #95a5a6;">Privacy Policy</a> | Made with the help of Artificial Intelligence. Learn more <a href="#" style="color: #95a5a6;">here.</a>
+  </footer>
+
+</body>
+</html>
